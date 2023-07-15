@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Wepsite</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="personal.js" defer></script>
+    <link rel="stylesheet" href="personal.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<div x-data="data"> 
+    <div class="container">
+       <div class="aside">
+        <div class="img">
+            <img src="images/profile.JPG">
+        </div>
+        <div>
+            <h1 x-text="username"></h1>
+        </div>
+        <div class="sidebar">
+            <div class="menuList">
+                <ul class="list">
+                    <li><button class="btn1"><i class="fa fa-user" aria-hidden="true"></i> About Me</button></li>
+                    <li><button class="btn1"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button></li>
+                    <li><button class="btn1" @click="personal_projects"><i class="fa fa-cogs" aria-hidden="true"></i> Project</button><li>
+                </ul>
+            </div>
+            <div class="links">
+                    <div class="icon"><a href="https://www.linkedin.com/in/samueltiisetsopudinyane-a2118b185/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkeIn</a></div>
+                    <div class="icon"><a href="https://github.com/Tiisetsopudinyane?tab=repositories"target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a></div>
+                    <div class="icon"><a href="https://api.whatsapp.com/send?phone=+27671563780" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> send message</a></div>
+            </div>
+        </div>
+       </div>
+        
+        <div class="section">
+            <h1 class="welcome">About Me <i class="fa fa-user" aria-hidden="true"></i></i></h1>
+            <p>i am Samuel Tiisetso Pudinyane from free state province, with Bsc in software engineering.studied at Bahcesehir university in 
+                Turkey through scholaship opportunity from free state gorventment. i am currently looking for an internship to complete my training 
+                as a requirements from the university. </p>
+                <p>i firmly believe that if given the opportunity it would unable me to much more opportunites
+                and access to the new adventures. im keen to explore, develop and gain skills. Obtained certificates from microsoft on Data fundamentals, 
+                azure cloud fundamentals, azure AI fundamentals as well as FreeCodeCamp JavaScript. </p>
+                <p>indivudually i am a very proactive person
+                ,person of multiple solutions to one problem,very analytical when it comes to assessing risks before applying the solution
+                .i have a good communication skills and good reputation when working in collaboration and as a team member, i am an outspoken person
+                with a good critical thinking skill and always aiming for good results.</p>
+            <div class="btn">
+                <button @click="contacts">Contact Me</button>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
+  </body>
+</html>

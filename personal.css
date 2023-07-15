@@ -1,0 +1,142 @@
+
+body{
+    background-color: rgb(48, 46, 46);
+    color: rgb(219, 218, 218);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+.img img{
+    border-radius: 100%;
+    width: 46%;
+    margin-top: .5em;
+}
+.img img:hover{
+    width: 80%;
+    border-radius: 2%;
+}
+.list,li{
+    list-style: none;
+    line-height: 2em;
+    color: white;
+    width: 100%;
+    font-size: 1em;
+}
+i{
+    color: rgb(190, 134, 11);
+}
+.list{
+    width: 100%;
+}
+.list,li,button, i{
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+}
+.container{
+    display: flex;
+}
+.aside{
+    flex: 1;
+    background-color: black;
+    text-align: center;
+    padding-top: .5em;
+}
+.sidebar{
+    display: block;
+}
+.menuList{
+    float: left;
+    width: 100%;
+    display: flex;
+}
+.links{
+    width: 100%;
+    display: flex;
+}
+.section{
+    flex: 2;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+.welcome{
+    color: rgb(190, 134, 11);
+}
+.section h1 i{
+    color: rgb(190, 134, 11);
+}
+.list button i{
+    float: left;
+    margin-left: 3em;
+}
+.list li button{
+    text-align: center;
+}
+.btn button{
+    background-color: rgb(48, 46, 46);
+    color: rgb(184, 183, 183);
+    font-weight: bold;
+    border: 1px solid rgb(108, 116, 163);
+    height: 2em;
+    border-radius: .25em;
+}
+.btn1{
+    margin: .1em;
+    width: 99%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(48, 46, 46);
+    color: rgb(184, 183, 183);
+    border: 1px solid rgb(108, 116, 163);
+    border-right: 0 ;
+    padding: 4px;
+    height: auto;
+    border-radius: .25em 0 0 .25em;
+}
+.btn1:hover{
+    margin: .1em;
+    width: 99%;
+    padding: 4px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 0 ;
+    height: auto;
+    border-radius: .25em 0 0 .25em;
+}
+.links div{
+    display: inline-block;
+}
+.links div a i{
+    font-size: 1.5em;
+    color: white;
+  }
+.icon{
+    margin-bottom: 5px;
+    padding: .5em;
+    flex: 1;
+}
+.icon:hover i{
+font-weight: bold;
+font-size: 2em;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+.icon a{
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    font-size: 12px;
+    }
+.icon1{
+    flex: 1;
+    padding: 3em;
+    margin: 3em;
+    display: block;
+    background: linear-gradient(360deg,rgb(95, 95, 95)0%,rgb(36, 36, 36),rgb(95, 95, 95));
+}
+.icon1 .deployed{
+    color: white;
+}
+    .icon1 a{
+color: rgb(160, 159, 159);
+    }
