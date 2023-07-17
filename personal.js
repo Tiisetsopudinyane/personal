@@ -16,6 +16,9 @@ document.addEventListener("alpine:init",()=>{
             personal_projects(){
                 return window.location.href = "personal-projects.html";
             },
+            personal_resume(){
+                return window.location.href = "personal-resume.html";
+            },
             sacArray(){
                 this.sacArrayList.push("images/sac1.png");
                 this.sacArrayList.push("images/sac2.png");

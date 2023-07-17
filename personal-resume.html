@@ -26,7 +26,7 @@
             <div class="menuList">
                 <ul class="list">
                     <li><button class="btn1" @click="personal_about"><i class="fa fa-user" aria-hidden="true"></i> About Me</button></li>
-                    <li><button class="btn1" @click="personal_resume"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button></li>
+                    <li><button class="btn1"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button></li>
                     <li><button class="btn1" @click="personal_projects"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</button><li>
                 </ul>
             </div>
@@ -38,15 +38,12 @@
         </div>
        </div>
         
-        <div class="section">
-            <h1 class="welcome">Welcome! <i class="fa fa-handshake-o" aria-hidden="true"></i></h1>
-            <h2>I'm</h2><h2 x-text="fullName"></h2>
-            <div class="btn">
-                <button @click="contacts">Contact Me</button>
+        <div class="sectionResume section">
+            <div class="resumeSection">
+                <iframe src="resume/resume.pdf"></iframe>
             </div>
         </div>
     </div>
-    <div></div>
 </div>
   </body>
 </html>
