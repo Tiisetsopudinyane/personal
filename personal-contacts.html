@@ -15,22 +15,23 @@
   <body>
 <div x-data="data"> 
     <div class="container">
-       <div class="aside">
-        <div class="img">
-            <img src="images/profile.JPG">
-        </div>
-        <div>
-            <h1 x-text="username"></h1>
-        </div>
-        <div class="sidebar">
-            <div class="menuList">
-                <ul class="list">
-                    <li><button class="btn1" @click="personal_about"><i class="fa fa-user" aria-hidden="true"></i> About Me</button></li>
-                    <li><button class="btn1"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button></li>
-                    <li><button class="btn1" @click="personal_projects"><i class="fa fa-cogs" aria-hidden="true"></i> Project</button><li>
-                </ul>
+        <div class="aside">
+            <div class="img">
+                <img src="images/profile.JPG">
             </div>
-        </div>
+            <div>
+                <h1 x-text="username"></h1>
+            </div>
+            <div class="sidebar">
+                <div class="menuList">
+                    <ul class="list">
+                        <li><button class="btn1" @click="personal_about"><i class="fa fa-user" aria-hidden="true"></i> About Me</button></li>
+                        <li><button class="btn1"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button></li>
+                        <li><button class="btn1"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</button><li>
+                    </ul>
+                </div>
+                <div class="links"> </div>
+            </div>
        </div>
         
         <div class="section">
