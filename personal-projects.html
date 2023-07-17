@@ -27,11 +27,11 @@
                 <ul class="list">
                     <li><button class="btn1" @click="personal_about"><i class="fa fa-user" aria-hidden="true"></i> About Me</button></li>
                     <li><button class="btn1"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button></li>
-                    <li><button class="btn1"><i class="fa fa-cogs" aria-hidden="true"></i> Project</button><li>
+                    <li><button class="btn1"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</button><li>
                 </ul>
             </div>
             <div class="links">
-                    <div class="icon"><a href="https://www.linkedin.com/in/samueltiisetsopudinyane-a2118b185/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkeIn</a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/samueltiisetsopudinyane-a2118b185/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></div>
                     <div class="icon"><a href="https://github.com/Tiisetsopudinyane?tab=repositories"target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a></div>
                     <div class="icon"><a href="https://api.whatsapp.com/send?phone=+27671563780" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> send message</a></div>
             </div>
@@ -41,21 +41,46 @@
         <div class="section">
             <h1 class="welcome">My Projects <i class="fa fa-cogs" aria-hidden="true"></i></i></h1>
             <div class="links1">
-                <div class="icon1">
-                    <h4>PERSONAL WEBPAGE</h4>
-                    <p> using boostrap and materialize in two different html pages</p>
-                    <a href="https://tiisetsopudinyane.github.io/responsive_webpages/" target="_blank" class="deployed">DEPLOYED LINK click here</a>
-                    <a href="https://github.com/Tiisetsopudinyane/responsive_webpages" target="_blank"> https://github.com/Tiisetsopudinyane/responsive_webpages</a>
+                <div class="divlinks1">
+                    <div class="icon1">
+                        <h4>PERSONAL WEBPAGE</h4>
+                        <p> using boostrap and materialize in two different html pages</p>
+                        <p><a href="https://tiisetsopudinyane.github.io/responsive_webpages/" target="_blank" class="deployed">DEPLOYED Github LINK click here</a></p>
+                        <a href="https://github.com/Tiisetsopudinyane/responsive_webpages" target="_blank">click here to redirect to Github</a>
+                    </div>
+                    <div class="icon1">
+                        <h4>PIZZA CART USING ALPINEJS</h4>
+                        <div class="picsAll">
+                            <a class="pics" href="images/pizza1.png" target="_blank"><img src="images/pizza1.png"></a>
+                            <a class="pics" href="images/pizza2.png" target="_blank"><img src="images/pizza2.png"></a>
+                            <a class="pics" href="images/pizza3.png" target="_blank"><img src="images/pizza3.png"></a>
+                            </div>
+                        <p> using API calls,alpingjs, javascript and css for style</p>
+    
+                        <p><a href="https://tiisetsopudinyane.github.io/Pizza-Cart-API/" target="_blank" class="deployed">DEPLOYED Github LINK click here</a></p>
+                        <a href="https://github.com/Tiisetsopudinyane/Pizza-Cart-API" target="_blank">click here to redirect to Github</a>
+                    </div>
                 </div>
-                <div class="icon1">
-                    <h4>PIZZA CART USING ALPINEJS</h4>
-                    <p> using API calls,alpingjs, javascript and css for style</p>
-                    <a href="https://tiisetsopudinyane.github.io/Pizza-Cart-API/" target="_blank" class="deployed">DEPLOYED LINK click here</a>
-                    <a href="https://github.com/Tiisetsopudinyane/Pizza-Cart-API" target="_blank">https://github.com/Tiisetsopudinyane/Pizza-Cart-API</a>
-                </div>
-                <div class="icon1">
-                    <h4>SECURITY ACCES CONTROL SYSTEM</h4>
-                    <p>digitalized system of security access control,language used c#</p> <a href="https://github.com/Tiisetsopudinyane/Security-Access-Control" target="_blank">https://github.com/Tiisetsopudinyane/Security-Access-Control</a>
+                <div class="divlink1">
+                    <div class="icon1">
+                        <h4>SECURITY ACCES CONTROL SYSTEM</h4>
+                        <div class="picsAll">
+                        <a class="pics" href="images/sac1.png" target="_blank"><img src="images/sac1.png"></a>
+                        <a class="pics" href="images/sac2.png" target="_blank"><img src="images/sac1.png"></a>
+                        <a class="pics" href="images/sac3.png" target="_blank"><img src="images/sac1.png"></a>
+                        <a class="pics" href="images/sac4.png" target="_blank"><img src="images/sac1.png"></a>
+                        <a class="pics" href="images/sac5.png" target="_blank"><img src="images/sac1.png"></a>
+                        
+                        </div>
+                        <template x-for="pics in sacArrayList">
+                            <div class="picsAll">
+                                <a class="pics" tagert="_blank">
+                                    <img x:bind-src="pics">
+                                </a>
+                            </div>
+                        </template>
+                        <p>digitalized system of security access control,language used c# desktop aplication</p> <a href="https://github.com/Tiisetsopudinyane/Security-Access-Control" target="_blank">click here to redirect to Github</a>
+                    </div>
                 </div>
         </div>
             <div class="btn">

@@ -8,12 +8,16 @@ body{
 }
 .img img{
     border-radius: 100%;
-    width: 46%;
+    border: 3px solid rgb(168, 168, 168);
+    width: 100px;
     margin-top: .5em;
 }
 .img img:hover{
     width: 80%;
     border-radius: 2%;
+}
+.list,ul{
+    display: flex;
 }
 .list,li{
     list-style: none;
@@ -30,16 +34,19 @@ i{
 }
 .list,li,button, i{
     color: rgb(255, 255, 255);
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .container{
-    display: flex;
+    display: block;
 }
 .aside{
-    flex: 1;
     background-color: black;
     text-align: center;
-    padding-top: .5em;
+    display: block;
+    padding: .5em;
+}
+.welcome,p{
+    padding: 1.5em;
 }
 .sidebar{
     display: block;
@@ -71,6 +78,7 @@ i{
 }
 .list li button{
     text-align: center;
+
 }
 .btn button{
     background-color: rgb(48, 46, 46);
@@ -79,6 +87,7 @@ i{
     border: 1px solid rgb(108, 116, 163);
     height: 2em;
     border-radius: .25em;
+    margin-bottom: 3em;
 }
 .btn1{
     margin: .1em;
@@ -87,10 +96,9 @@ i{
     background-color: rgb(48, 46, 46);
     color: rgb(184, 183, 183);
     border: 1px solid rgb(108, 116, 163);
-    border-right: 0 ;
     padding: 4px;
     height: auto;
-    border-radius: .25em 0 0 .25em;
+    border-radius: .25em;
 }
 .btn1:hover{
     margin: .1em;
@@ -100,7 +108,6 @@ i{
     color: rgb(255, 255, 255);
     font-weight: bold;
     border: 1px solid rgb(255, 255, 255);
-    border-right: 0 ;
     height: auto;
     border-radius: .25em 0 0 .25em;
 }
@@ -109,10 +116,11 @@ i{
 }
 .links div a i{
     font-size: 1.5em;
+    text-align: center;
     color: white;
   }
 .icon{
-    margin-bottom: 5px;
+    margin: 5px;
     padding: .5em;
     flex: 1;
 }
@@ -129,9 +137,10 @@ color: rgb(0, 0, 0);
     }
 .icon1{
     flex: 1;
-    padding: 3em;
+    padding: .5em;
     margin: 3em;
     display: block;
+    border-radius: .5em;
     background: linear-gradient(360deg,rgb(95, 95, 95)0%,rgb(36, 36, 36),rgb(95, 95, 95));
 }
 .icon1 .deployed{
@@ -140,3 +149,93 @@ color: rgb(0, 0, 0);
     .icon1 a{
 color: rgb(160, 159, 159);
     }
+    .pics,img{
+        width: 150px;
+    }
+    
+    .pics{
+        display: flex;
+        flex: 1;
+        margin: auto;
+        padding: .2em;
+    }
+    @media (min-width:960px) {
+        .aside{
+            flex: 1;
+            background-color: black;
+            text-align: center;
+            display: block;
+            padding-top: .5em;
+        }
+        .img img{
+            border-radius: 100%;
+            border: 3px solid rgb(168, 168, 168);
+            width: 46%;
+            margin-top: .5em;
+        }
+        .img img:hover{
+            width: 80%;
+            border-radius: 2%;
+        }
+        .list,li{
+            list-style: none;
+            line-height: 2em;
+            color: white;
+            width: 100%;
+            font-size: 1em;
+        }
+    
+    .list,li,button, i{
+        color: rgb(255, 255, 255);
+        font-size: 1.1em;
+    }
+    .list,ul{
+        display: block;
+    }
+    .container{
+        display: flex;
+    }
+    .links1{
+        display: block;
+        flex: 1;
+    }
+    .divlinks1{
+        display: flex;
+    }
+    .btn1{
+        margin: .1em;
+        width: 99%;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(48, 46, 46);
+        color: rgb(184, 183, 183);
+        border: 1px solid rgb(108, 116, 163);
+        border-right: 0 ;
+        padding: 4px;
+        height: auto;
+        border-radius: .25em 0 0 .25em;
+    }
+    .btn1:hover{
+        margin: .1em;
+        width: 99%;
+        padding: 4px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        border: 1px solid rgb(255, 255, 255);
+        border-right: 0 ;
+        height: auto;
+        border-radius: .25em 0 0 .25em;
+    }
+    .icon{
+        margin-bottom: 5px;
+        padding: .5em;
+        flex: 1;
+    }
+    .welcome,p{
+        padding: 1em;
+    }
+    .picsAll{
+        display: flex;
+    }
+     
+}
